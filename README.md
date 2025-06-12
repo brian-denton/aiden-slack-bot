@@ -143,9 +143,9 @@ npm run dev
 In any channel where the bot is present, mention it to get a response:
 
 ```
-@aidan What is the weather like today?
-@aidan Can you help me with a coding problem?
-@aidan Tell me a joke
+@Aidan What is the weather like today?
+@Aidan Can you help me with a coding problem?
+@Aidan Tell me a joke
 ```
 
 ### Direct Messages
@@ -162,21 +162,6 @@ Click on the bot's profile and go to the "Home" tab to see:
 - Welcome message and instructions
 - Current model information
 - Bot status
-
-## Configuration Options
-
-| Variable | Description | Default | Required |
-|----------|-------------|---------|----------|
-| `SLACK_BOT_TOKEN` | Bot User OAuth Token (xoxb-...) | - | ✅ |
-| `SLACK_SIGNING_SECRET` | Signing Secret for request verification | - | ✅ |
-| `SLACK_APP_TOKEN` | App-Level Token for Socket Mode (xapp-...) | - | ✅ |
-| `LLM_PROVIDER` | Provider: `ollama` or `docker-model-runner` | `ollama` | ❌ |
-| `LLM_BASE_URL` | Base URL for LLM API | Auto-detected based on provider | ❌ |
-| `LLM_MODEL` | Model name to use | Provider-specific default | ❌ |
-| `LLM_TIMEOUT` | Request timeout in milliseconds | `60000` | ❌ |
-| `BOT_NAME` | Bot name for mentions | `Aidan` | ❌ |
-| `PORT` | Port for the application | `3000` | ❌ |
-| `SYSTEM_PROMPT` | System prompt for LLM personality | Default helpful assistant | ❌ |
 
 ## Scripts
 
